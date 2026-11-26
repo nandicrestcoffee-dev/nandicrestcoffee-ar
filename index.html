@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nandi Crest Coffee — قهوة أرابيكا كينية عالية الارتفاع</title>
+  <title>Nandi Crest Coffee | قهوة أرابيكا كينية عالية الارتفاع</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -115,7 +115,6 @@
       color: var(--espresso);
       font-size: 0.82rem;
       font-weight: 800;
-      letter-spacing: 0.4px;
       padding: 5px 13px;
       border-radius: 999px;
       margin-bottom: 16px;
@@ -132,13 +131,6 @@
     .hero-copy {
       color: var(--muted);
       font-size: 1.04rem;
-      margin-bottom: 14px;
-    }
-
-    .meta-line {
-      color: var(--roast);
-      font-size: 0.92rem;
-      font-weight: 700;
       margin-bottom: 24px;
     }
 
@@ -241,34 +233,24 @@
       font-size: 0.94rem;
     }
 
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 26px;
+    }
+
     .media-card {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 14px;
       overflow: hidden;
-      margin-top: 26px;
     }
 
     .media-card img {
       width: 100%;
-      height: 210px;
+      height: 220px;
       object-fit: cover;
-    }
-
-    .media-card .caption {
-      padding: 16px 20px;
-    }
-
-    .media-card .caption strong {
-      display: block;
-      color: var(--espresso);
-      font-size: 1rem;
-      margin-bottom: 4px;
-    }
-
-    .media-card .caption span {
-      color: var(--muted);
-      font-size: 0.9rem;
     }
 
     .inquiry-box {
@@ -331,21 +313,18 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <span class="kicker">SINGLE ORIGIN · HIGH ALTITUDE · FAMILY-GROWN</span>
+          <span class="kicker">منشأ واحد · مرتفعات عالية · زراعة عائلية</span>
           <h1>قهوة أرابيكا كينية عالية الارتفاع</h1>
           <p class="hero-copy">
             كل منشأ يروي قصة — وقصتنا تبدأ من مرتفعات ناندي. مبادرة بنّ مقرّها كينيا تربط قهوة الأرابيكا الكينية عالية الارتفاع بالمشترين الدوليين، والمستوردين، والمحامص، وشركاء التجارة طويلة الأمد.
           </p>
-          <p class="meta-line">
-            الموقع: ناندي هيلز ونيروبي، كينيا · شرق أفريقيا | المكتب الاستراتيجي: nandicrestcoffee@gmail.com
-          </p>
           <div class="btn-group">
-            <a class="btn btn-primary" href="#inquiry">استفسار توريد البن</a>
-            <a class="btn btn-secondary" href="https://nandicrestcoffee-dev.github.io/">الموقع الرئيسي (English)</a>
+            <a class="btn btn-primary" href="#inquiry">تواصل مع المكتب الاستراتيجي</a>
+            <a class="btn btn-secondary" href="https://nandicrestcoffee-dev.github.io/">English</a>
           </div>
         </div>
         <div class="hero-frame">
-          <img src="./grok_1793181558025.jpg" alt="Nandi Crest Coffee — مرتفعات ناندي والقهوة الكينية" />
+          <img src="./grok_1793181558025.jpg" alt="قهوة أرابيكا كينية من مرتفعات ناندي" />
         </div>
       </div>
     </section>
@@ -354,45 +333,33 @@
       <div class="container">
         <h2>متجذّرة في الأرض</h2>
         <p class="lead">
-          يمنح الارتفاع والمناخ وظروف النمو في ناندي هيلز قهوة الأرابيكا الكينية طابعها المميز. تبدأ القهوة قبل وصولها إلى الكوب بوقت طويل — مع الأرض، والأشخاص الذين يعتنون بها، وكل قرار زراعي على الطريق. متجذّرة في الأرض. مسترشدة بالجودة. متصلة بكينيا.
+          يمنح الارتفاع والمناخ وظروف النمو في ناندي هيلز قهوة الأرابيكا الكينية طابعها المميز. تبدأ القهوة قبل وصولها إلى الكوب بوقت طويل — مع الأرض، والأشخاص الذين يعتنون بها، وكل قرار زراعي على الطريق.
         </p>
         <div class="grid-3">
           <div class="card">
-            <h3>الأصل (Origin)</h3>
+            <h3>الأصل</h3>
             <p>مرتفعات ناندي ونيروبي، كينيا · شرق أفريقيا.</p>
           </div>
           <div class="card">
-            <h3>الجودة (Quality)</h3>
+            <h3>الجودة</h3>
             <p>عناية زراعية دقيقة وتقييم واضح للعينات والدفعات.</p>
           </div>
           <div class="card">
-            <h3>الثقة (Trust)</h3>
+            <h3>الثقة</h3>
             <p>شراكات تجارية شفافة وموثوقة طويلة الأمد.</p>
           </div>
         </div>
 
-        <div class="grid-3">
-          <article class="media-card">
-            <img src="./grok_1793181041141.jpg" alt="الحصاد في مرتفعات ناندي" />
-            <div class="caption">
-              <strong>الزراعة والحصاد</strong>
-              <span>مرتفعات ناندي هيلز، كينيا.</span>
-            </div>
-          </article>
-          <article class="media-card">
-            <img src="./grok_1793182687051.jpg" alt="المعالجة والتصدير عبر مومباسا" />
-            <div class="caption">
-              <strong>المعالجة والتصدير</strong>
-              <span>تحضير الدفعات والوثائق والشحن الدولي.</span>
-            </div>
-          </article>
-          <article class="media-card">
-            <img src="./Screenshot_20261028_135631_ChatGPT.jpg" alt="التجارة والاتفاقيات الدولية" />
-            <div class="caption">
-              <strong>التجارة والشراكات</strong>
-              <span>ترتيبات التوريد والتعاون مع الشركاء.</span>
-            </div>
-          </article>
+        <div class="media-grid">
+          <div class="media-card">
+            <img src="./grok_1793181041141.jpg" alt="مزارع البن في مرتفعات ناندي" />
+          </div>
+          <div class="media-card">
+            <img src="./grok_1793182687051.jpg" alt="معالجة البن وتصديره عبر مومباسا" />
+          </div>
+          <div class="media-card">
+            <img src="./Screenshot_20261028_135631_ChatGPT.jpg" alt="اتفاقيات التصدير والشراكة الدولية" />
+          </div>
         </div>
       </div>
     </section>
@@ -406,11 +373,11 @@
         <div class="grid-5">
           <div class="card">
             <h3>توريد البن</h3>
-            <p>استكشاف قهوة الأرابيكا الكينية من مناطق المرتفعات.</p>
+            <p>استكشاف محاصيل الأرابيكا الكينية من مناطق المرتفعات.</p>
           </div>
           <div class="card">
             <h3>العينات والتقييم</h3>
-            <p>مناقشة توفر العينات وتقييم الجودة.</p>
+            <p>مناقشة توفر العينات وتقييم الجودة قبل التعاقد.</p>
           </div>
           <div class="card">
             <h3>الجملة والإمداد</h3>
@@ -432,7 +399,7 @@
       <div class="container">
         <h2>من التواصل الأول إلى الشراكة</h2>
         <p class="lead">
-          اتفاقات واضحة. مسؤولية متبادلة. تعاون موثوق.
+          اتفاقات واضحة، ومسؤولية متبادلة، وتعاون موثوق.
         </p>
         <div class="grid-4">
           <div class="card">
@@ -457,10 +424,10 @@
 
     <section id="inquiry">
       <div class="container">
-        <h2>الفصل التالي · استفسار توريد البن — المكتب الاستراتيجي</h2>
+        <h2>استفسار توريد البن — المكتب الاستراتيجي</h2>
         <div class="inquiry-box">
           <p class="lead" style="margin-bottom: 0;">
-            يرجى تضمين هذه التفاصيل في بريدك الإلكتروني حتى يتمكن مكتبنا الاستراتيجي في نيروبي من الرد بكفاءة:
+            يرجى تضمين هذه التفاصيل في رسالتك حتى يتمكن مكتبنا الاستراتيجي في نيروبي من الرد بكفاءة:
           </p>
           <ul class="inquiry-list">
             <li>
@@ -481,7 +448,7 @@
             </li>
           </ul>
           <a class="btn btn-primary" href="mailto:nandicrestcoffee@gmail.com?subject=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%AA%D9%88%D8%B1%D9%8A%D8%AF%20%D8%A8%D9%86%20-%20Nandi%20Crest%20Coffee">
-            مراسلة المكتب الاستراتيجي (nandicrestcoffee@gmail.com)
+            nandicrestcoffee@gmail.com
           </a>
         </div>
       </div>
@@ -490,7 +457,7 @@
 
   <footer>
     <div class="container">
-      Nandi Crest Coffee · ناندي هيلز ونيروبي، كينيا · nandicrestcoffee-ar
+      Nandi Crest Coffee · ناندي هيلز ونيروبي، كينيا
     </div>
   </footer>
 </body>
