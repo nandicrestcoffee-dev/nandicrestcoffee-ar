@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nandi Crest Coffee | قهوة أرابيكا كينية عالية الارتفاع</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f7f4ef;
+      --surface: #ffffff;
+      --ink: #1c1917;
+      --muted: #57534e;
+      --accent: #3b2314;
+      --accent-2: #6f4526;
+      --border: #e7e0d6;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: var(--bg);
+      color: var(--ink);
+      line-height: 1.8;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 16px 0;
+    }
+
+    .brand {
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .lang-switch {
+      border: 1px solid var(--border);
+      background: var(--bg);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-weight: 700;
+      color: var(--accent) !important;
+    }
+
+    .hero {
+      padding: 64px 0 48px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tag {
+      display: inline-block;
+      background: #efe7dc;
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      line-height: 1.35;
+      color: var(--accent);
+      margin-bottom: 16px;
+      font-weight: 800;
+    }
+
+    .hero p {
+      font-size: 1.08rem;
+      color: var(--muted);
+      max-width: 760px;
+      margin-bottom: 28px;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.98rem;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-2);
+    }
+
+    .btn-secondary {
+      background: var(--surface);
+      color: var(--accent);
+      border: 1px solid var(--border);
+    }
+
+    section {
+      padding: 52px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 1.55rem;
+      color: var(--accent);
+      margin-bottom: 14px;
+      font-weight: 800;
+    }
+
+    .section-lead {
+      color: var(--muted);
+      margin-bottom: 24px;
+      max-width: 760px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      color: var(--accent);
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .contact-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 26px;
+    }
+
+    .contact-list {
+      list-style: none;
+      margin: 14px 0 20px;
+      color: var(--muted);
+    }
+
+    .contact-list li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      padding: 28px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#">Nandi Crest Coffee</a>
+      <nav class="nav-links">
+        <a href="#origin">المنشأ</a>
+        <a href="#cooperation">مجالات التعاون</a>
+        <a href="#process">آلية الشراكة</a>
+        <a href="#contact">التواصل</a>
+        <a href="https://nandicrestcoffee.blogspot.com/?m=1" target="_blank" rel="noopener">المدونة</a>
+        <a class="lang-switch" href="https://nandicrestcoffee-dev.github.io/">English</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="tag">منشأ واحد · مرتفعات عالية · زراعة عائلية</span>
+        <h1>قهوة أرابيكا كينية عالية الارتفاع من مرتفعات ناندي</h1>
+        <p>
+          مبادرة بنّ مقرّها كينيا تربط قهوة الأرابيكا الكينية عالية الارتفاع بالمشترين الدوليين، والمستوردين، والمحامص، وشركاء التجارة طويلة الأمد — انطلاقاً من ناندي هيلز ونيروبي نحو الأسواق العالمية.
+        </p>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="#contact">تواصل مع المكتب الاستراتيجي</a>
+          <a class="btn btn-secondary" href="https://nandicrestcoffee-dev.github.io/">النسخة الإنجليزية الرئيسية</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="origin">
+      <div class="container">
+        <h2>متجذّرة في مرتفعات ناندي</h2>
+        <p class="section-lead">
+          يمنح الارتفاع والمناخ وظروف النمو في ناندي هيلز قهوة الأرابيكا الكينية طابعها المميز. تبدأ جودة القهوة قبل وصولها إلى الكوب — مع الأرض، والأشخاص الذين يعتنون بها، وكل قرار زراعي على الطريق.
+        </p>
+        <div class="grid">
+          <div class="card">
+            <h3>الأصل (Origin)</h3>
+            <p>مرتفعات ناندي ونيروبي، كينيا · شرق أفريقيا.</p>
+          </div>
+          <div class="card">
+            <h3>الجودة (Quality)</h3>
+            <p>عناية زراعية دقيقة وتقييم واضح للعينات والدفعات.</p>
+          </div>
+          <div class="card">
+            <h3>الثقة (Trust)</h3>
+            <p>شراكات تجارية شفافة وموثوقة طويلة الأمد.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cooperation">
+      <div class="container">
+        <h2>مجالات التعاون</h2>
+        <p class="section-lead">
+          نرحب باستفسارات مستوردي البن، والمحامص، والموزعين، ومجموعات الضيافة، والشركاء التجاريين الاستراتيجيين:
+        </p>
+        <div class="grid">
+          <div class="card">
+            <h3>توريد البن</h3>
+            <p>استكشاف محاصيل أرابيكا كينية من مناطق المرتفعات.</p>
+          </div>
+          <div class="card">
+            <h3>العينات والتقييم</h3>
+            <p>مناقشة توفر العينات وتقييم الجودة قبل التعاقد.</p>
+          </div>
+          <div class="card">
+            <h3>الجملة والإمداد</h3>
+            <p>بحث الكميات المناسبة وترتيبات التوريد المنتظمة.</p>
+          </div>
+          <div class="card">
+            <h3>التجارة واللوجستيات</h3>
+            <p>مناقشة متطلبات التصدير وترتيبات الشحن والأسواق المستهدفة.</p>
+          </div>
+          <div class="card">
+            <h3>تطوير الأسواق</h3>
+            <p>بناء روابط تجارية بين منتجي شرق أفريقيا والأسواق العالمية.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="container">
+        <h2>من التواصل الأول إلى الشراكة</h2>
+        <p class="section-lead">اتفاقات واضحة، ومسؤولية متبادلة، وتعاون يعتمد عليه.</p>
+        <div class="grid">
+          <div class="card">
+            <h3>1. التواصل الأولي</h3>
+            <p>مشاركة استفسارك أو متطلباتك أو عرض العمل.</p>
+          </div>
+          <div class="card">
+            <h3>2. الاتفاق</h3>
+            <p>التوافق على الشروط وتوثيقها عبر عقد أو ترتيب مؤكد.</p>
+          </div>
+          <div class="card">
+            <h3>3. الالتزام المتبادل</h3>
+            <p>الوفاء بالمسؤوليات المتفق عليها بشفافية ومهنية.</p>
+          </div>
+          <div class="card">
+            <h3>4. التعاون المستمر</h3>
+            <p>إتمام التنفيذ كما تم الاتفاق وبناء ثقة طويلة الأمد.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>استفسارات توريد البن — المكتب الاستراتيجي</h2>
+        <div class="contact-box">
+          <p>
+            يرجى تضمين التفاصيل التالية في رسالتك حتى يتمكن مكتبنا الاستراتيجي في نيروبي من الرد بكفاءة:
+          </p>
+          <ul class="contact-list">
+            <li><strong>1. معلومات الشركة:</strong> اسم الشركة أو النشاط التجاري.</li>
+            <li><strong>2. مواصفات التوريد:</strong> منشأ البن المفضّل أو المتطلبات الفنية.</li>
+            <li><strong>3. الكمية والتسليم:</strong> الكمية التقديرية المطلوبة والوجهة.</li>
+            <li><strong>4. الأهداف التجارية:</strong> توريد لمرة واحدة أم توريد مستمر.</li>
+          </ul>
+          <a class="btn btn-primary" href="mailto:nandicrestcoffee@gmail.com?subject=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%AA%D9%88%D8%B1%D9%8A%D8%AF%20%D8%A8%D9%86%20-%20Nandi%20Crest%20Coffee">
+            إرسال بريد إلى nandicrestcoffee@gmail.com
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      Nandi Crest Coffee · ناندي هيلز ونيروبي، كينيا · جميع الحقوق محفوظة
+    </div>
+  </footer>
+</body>
+</html>
