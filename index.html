@@ -6,10 +6,10 @@
   <title>Nandi Crest Coffee — قهوة الأرابيكا الكينية ومكتب التجارة الدولي</title>
   <meta name="description" content="النسخة العربية الرسمية لقهوة الأرابيكا الكينية عالية الارتفاع من مرتفعات ناندي وتوريد B2B عبر FOB مومباسا وCIF والشحن البحري والجوي." />
 
-  <!-- Fonts -->
+  <!-- Clean Modern Arabic Fonts: IBM Plex Sans Arabic & Tajawal -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Tajawal:wght@500;700;800&display=swap" rel="stylesheet" />
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -18,8 +18,8 @@
       theme: {
         extend: {
           fontFamily: {
-            serif: ['"Amiri"', 'Georgia', 'serif'],
-            sans: ['"Cairo"', 'system-ui', 'sans-serif'],
+            serif: ['"Tajawal"', '"IBM Plex Sans Arabic"', 'system-ui', 'sans-serif'],
+            sans: ['"IBM Plex Sans Arabic"', '"Tajawal"', 'system-ui', 'sans-serif'],
           },
           colors: {
             obsidian: '#0E0B0A',
@@ -44,10 +44,13 @@
     body {
       background-color: #0E0B0A;
       color: #F6F1EA;
-      font-family: 'Cairo', sans-serif;
+      font-family: 'IBM Plex Sans Arabic', 'Tajawal', sans-serif;
+    }
+    h1, h2, h3, .font-display {
+      font-family: 'Tajawal', 'IBM Plex Sans Arabic', sans-serif;
     }
     .glass-nav {
-      background: rgba(14, 11, 10, 0.82);
+      background: rgba(14, 11, 10, 0.84);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
       border-bottom: 1px solid rgba(200, 157, 84, 0.16);
@@ -75,10 +78,10 @@
       <!-- Brand Logo -->
       <a href="#top" class="flex items-center gap-3 group shrink-0">
         <div class="w-10 h-10 rounded-full border border-gold/50 bg-roast flex items-center justify-center shadow-gold group-hover:border-gold transition">
-          <span class="font-serif text-xl font-bold text-gold">NC</span>
+          <span class="font-display text-lg font-extrabold text-gold">NC</span>
         </div>
         <div class="leading-tight">
-          <div class="font-serif text-xl sm:text-2xl font-bold tracking-wide text-cream">
+          <div class="font-display text-xl sm:text-2xl font-bold tracking-wide text-cream">
             Nandi Crest <span class="text-gold">Coffee</span>
           </div>
           <div class="text-[11px] text-sand/70">
@@ -211,7 +214,7 @@
               <span>أرابيكا كينية عالية الارتفاع • FOB و CIF • شحن بحري وجوي</span>
             </div>
 
-            <h1 class="font-serif text-4xl sm:text-6xl lg:text-[62px] font-bold leading-[1.12] gold-gradient-text">
+            <h1 class="font-display text-4xl sm:text-6xl lg:text-[60px] font-extrabold leading-[1.15] gold-gradient-text">
               قهوة أرابيكا كينية عالية الارتفاع لمحامص وشركاء التجارة العالمية
             </h1>
 
@@ -257,15 +260,15 @@
             <!-- Key Metrics Strip -->
             <div class="grid grid-cols-3 gap-4 pt-6 border-t border-gold/15 max-w-2xl">
               <div>
-                <div class="font-serif text-2xl sm:text-3xl font-bold text-gold" dir="ltr">FOB & CIF</div>
+                <div class="font-display text-2xl sm:text-3xl font-extrabold text-gold" dir="ltr">FOB & CIF</div>
                 <div class="text-xs text-sand/70 mt-0.5">مومباسا وميناء الوصول</div>
               </div>
               <div>
-                <div class="font-serif text-2xl sm:text-3xl font-bold text-cream">بحري وجوي</div>
+                <div class="font-display text-2xl sm:text-3xl font-extrabold text-cream">بحري وجوي</div>
                 <div class="text-xs text-sand/70 mt-0.5">حاويات بحرية وشحن جوي</div>
               </div>
               <div>
-                <div class="font-serif text-2xl sm:text-3xl font-bold text-cream" dir="ltr">1,650–2,100m</div>
+                <div class="font-display text-2xl sm:text-3xl font-extrabold text-cream" dir="ltr">1,650–2,100m</div>
                 <div class="text-xs text-sand/70 mt-0.5">ارتفاع مرتفعات ناندي</div>
               </div>
             </div>
@@ -275,7 +278,8 @@
           <div class="lg:col-span-5">
             <div class="relative rounded-3xl overflow-hidden border border-gold/30 bg-roast shadow-card">
               <img
-                data-repo-img="grok_1793181041141.jpg,grok_1793181558025.jpg,grok_1793182687051.jpg"
+                src="grok_1793181041141.jpg"
+                data-fallbacks="grok_1793181558025.jpg,grok_1793182687051.jpg,file_1795675940463.jpg"
                 data-label="Nandi Crest Coffee • Kenya"
                 alt="عرض قهوة ناندي كريست الكينية عالية الارتفاع"
                 class="w-full h-[420px] sm:h-[490px] object-cover"
@@ -283,10 +287,10 @@
               <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-obsidian via-obsidian/85 to-transparent p-6">
                 <div class="flex items-center justify-between gap-3">
                   <div>
-                    <p class="text-[11px] uppercase tracking-wider text-gold font-semibold">ناندي كريست للتجارة والتصدير</p>
-                    <p class="font-serif text-xl text-cream mt-0.5">إيحاءات التوت الأسود والحمضيات والكاكاو</p>
+                    <p class="text-[11px] text-gold font-bold">ناندي كريست للتجارة والتصدير</p>
+                    <p class="font-display text-xl font-bold text-cream mt-0.5">إيحاءات التوت الأسود والحمضيات والكاكاو</p>
                   </div>
-                  <span class="shrink-0 rounded-full bg-forest/90 border border-emerald-500/30 px-3 py-1 text-[11px] text-emerald-200 font-semibold">
+                  <span class="shrink-0 rounded-full bg-forest/90 border border-emerald-500/30 px-3 py-1 text-[11px] text-emerald-200 font-bold">
                     FOB / CIF
                   </span>
                 </div>
@@ -302,8 +306,8 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
-            <span class="text-xs uppercase tracking-wider text-gold font-bold">المصدر والتربة</span>
-            <h2 class="font-serif text-3xl sm:text-5xl font-bold text-cream mt-2">
+            <span class="text-xs font-bold text-gold">المصدر والتربة</span>
+            <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-cream mt-2">
               جذورها في مرتفعات ناندي وتنظيمها في نيروبي
             </h2>
           </div>
@@ -315,14 +319,15 @@
         <div class="grid md:grid-cols-3 gap-6">
           <article class="card-surface rounded-2xl overflow-hidden transition duration-300">
             <img
-              data-repo-img="grok_1793181558025.jpg,grok_1793181041141.jpg,grok_1793182687051.jpg"
+              src="grok_1793181558025.jpg"
+              data-fallbacks="grok_1793181041141.jpg,grok_1793182687051.jpg,file_1795675940463.jpg"
               data-label="Nandi Hills Origin"
               alt="حصاد القهوة في مرتفعات ناندي"
               class="w-full h-56 object-cover"
             />
             <div class="p-6 space-y-2.5">
               <div class="text-xs font-bold text-gold">01 • الحصاد والمنشأ</div>
-              <h3 class="font-serif text-2xl font-bold text-cream">أرابيكا مرتفعات ناندي</h3>
+              <h3 class="font-display text-2xl font-bold text-cream">أرابيكا مرتفعات ناندي</h3>
               <p class="text-sm text-sand/75 leading-relaxed">
                 اختيار دقيق للدفعات من المرتفعات الكينية للحفاظ على نقاء الكوب والحلاوة والوضوح العطري.
               </p>
@@ -331,14 +336,15 @@
 
           <article class="card-surface rounded-2xl overflow-hidden transition duration-300">
             <img
-              data-repo-img="grok_1793182687051.jpg,grok_1793181041141.jpg,grok_1793181558025.jpg"
+              src="grok_1793182687051.jpg"
+              data-fallbacks="grok_1793181041141.jpg,grok_1793181558025.jpg,file_1795675940463.jpg"
               data-label="Grading & Quality"
               alt="فرز ومعايرة حبوب البن الأخضر"
               class="w-full h-56 object-cover"
             />
             <div class="p-6 space-y-2.5">
               <div class="text-xs font-bold text-gold">02 • الفرز والمعايرة</div>
-              <h3 class="font-serif text-2xl font-bold text-cream">تصنيف الدرجات والرطوبة</h3>
+              <h3 class="font-display text-2xl font-bold text-cream">تصنيف الدرجات والرطوبة</h3>
               <p class="text-sm text-sand/75 leading-relaxed">
                 ضبط الرطوبة وتصنيف الأحجام بعناية لضمان ثبات الجودة أثناء الشحن البحري أو الجوي.
               </p>
@@ -347,14 +353,15 @@
 
           <article class="card-surface rounded-2xl overflow-hidden transition duration-300">
             <img
-              data-repo-img="grok_1793181041141.jpg,grok_1793182687051.jpg,grok_1793181558025.jpg"
+              src="file_1795675940463.jpg"
+              data-fallbacks="grok_1793181041141.jpg,grok_1793182687051.jpg,grok_1793181558025.jpg"
               data-label="Nairobi Trade Desk"
               alt="التنسيق التجاري وتصدير القهوة"
               class="w-full h-56 object-cover"
             />
             <div class="p-6 space-y-2.5">
               <div class="text-xs font-bold text-gold">03 • التنفيذ التجاري</div>
-              <h3 class="font-serif text-2xl font-bold text-cream">توريد FOB و CIF</h3>
+              <h3 class="font-display text-2xl font-bold text-cream">توريد FOB و CIF</h3>
               <p class="text-sm text-sand/75 leading-relaxed">
                 إدارة واضحة للعروض والعقود والشحن البحري والجوي من مكتبنا التجاري في نيروبي.
               </p>
@@ -368,8 +375,8 @@
     <section id="offerings" class="py-20 border-t border-gold/10">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-2xl mb-12">
-          <span class="text-xs uppercase tracking-wider text-gold font-bold">الدرجات والشروط التجارية</span>
-          <h2 class="font-serif text-3xl sm:text-5xl font-bold text-cream mt-2">
+          <span class="text-xs font-bold text-gold">الدرجات والشروط التجارية</span>
+          <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-cream mt-2">
             خيارات توريد مرنة للمحامص والمستوردين
           </h2>
         </div>
@@ -383,7 +390,7 @@
                 </span>
                 <span class="text-xs text-sand/65" dir="ltr">AA / AB</span>
               </div>
-              <h3 class="font-serif text-3xl font-bold text-cream">أرابيكا ناندي هيلز الكينية</h3>
+              <h3 class="font-display text-3xl font-bold text-cream">أرابيكا ناندي هيلز الكينية</h3>
               <p class="text-sm text-sand/80 mt-3 leading-relaxed">
                 حمضية مشرقة متوازنة مع حلاوة فاكهية وقوام غني مناسب لمحامص القهوة المختصة والتوريد التجاري.
               </p>
@@ -421,7 +428,7 @@
                 </span>
                 <span class="text-xs text-sand/65">عقود فورية وتعاقدية</span>
               </div>
-              <h3 class="font-serif text-3xl font-bold text-cream">شروط التسليم والشحن الدولي</h3>
+              <h3 class="font-display text-3xl font-bold text-cream">شروط التسليم والشحن الدولي</h3>
               <p class="text-sm text-sand/80 mt-3 leading-relaxed">
                 نقدّم عروضاً وفق <strong class="text-cream">FOB</strong> و <strong class="text-cream">CIF</strong> مع تنظيم <strong class="text-cream">الشحن البحري</strong> للحاويات والكميات و <strong class="text-cream">الشحن الجوي</strong> للعينات والطلبات العاجلة.
               </p>
@@ -459,8 +466,8 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-12 gap-10 items-center">
           <div class="lg:col-span-6 space-y-5">
-            <span class="text-xs uppercase tracking-wider text-gold font-bold">FOB • CIF • شحن بحري • شحن جوي</span>
-            <h2 class="font-serif text-3xl sm:text-5xl font-bold text-cream">
+            <span class="text-xs font-bold text-gold">FOB • CIF • شحن بحري • شحن جوي</span>
+            <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-cream">
               توريد بحري وجوي منظم مع وثائق التصدير
             </h2>
             <p class="text-sm sm:text-base text-sand/80 leading-relaxed">
@@ -489,13 +496,15 @@
 
           <div class="lg:col-span-6 grid sm:grid-cols-2 gap-4">
             <img
-              data-repo-img="grok_1793182687051.jpg,grok_1793181041141.jpg,grok_1793181558025.jpg"
+              src="grok_1793182687051.jpg"
+              data-fallbacks="grok_1793181041141.jpg,grok_1793181558025.jpg,file_1795675940463.jpg"
               data-label="Sea & Air Export"
               alt="التصدير والشحن البحري والجوي للقهوة الكينية"
               class="rounded-2xl border border-gold/25 object-cover w-full h-64 sm:h-72 shadow-card"
             />
             <img
-              data-repo-img="grok_1793181558025.jpg,grok_1793182687051.jpg,grok_1793181041141.jpg"
+              src="grok_1793181558025.jpg"
+              data-fallbacks="grok_1793182687051.jpg,grok_1793181041141.jpg,file_1795675940463.jpg"
               data-label="Trade & Origin"
               alt="مستندات التجارة والمنشأ لقهوة ناندي كريست"
               class="rounded-2xl border border-gold/25 object-cover w-full h-64 sm:h-72 shadow-card sm:mt-8"
@@ -510,8 +519,8 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="rounded-3xl card-surface p-8 sm:p-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
           <div class="space-y-2 max-w-2xl">
-            <span class="text-xs uppercase tracking-wider text-gold font-bold">المدونة الرسمية</span>
-            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-cream">
+            <span class="text-xs font-bold text-gold">المدونة الرسمية</span>
+            <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-cream">
               تصفح التحديثات والمقالات على مدونة Nandi Crest Coffee
             </h2>
             <p class="text-sm sm:text-base text-sand/80">
@@ -539,8 +548,8 @@
         <div class="grid lg:grid-cols-12 gap-10">
           <div class="lg:col-span-5 space-y-6">
             <div>
-              <span class="text-xs uppercase tracking-wider text-gold font-bold">مكتب التجارة الاستراتيجي</span>
-              <h2 class="font-serif text-3xl sm:text-5xl font-bold text-cream mt-2">
+              <span class="text-xs font-bold text-gold">مكتب التجارة الاستراتيجي</span>
+              <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-cream mt-2">
                 تواصل مباشرة مع فريقنا
               </h2>
               <p class="text-sm sm:text-base text-sand/80 mt-3 leading-relaxed">
@@ -599,7 +608,7 @@
           <div class="lg:col-span-7">
             <form id="trade-inquiry-form" class="card-surface rounded-3xl p-6 sm:p-8 space-y-5">
               <div class="flex flex-wrap items-center justify-between gap-4">
-                <h3 class="font-serif text-2xl sm:text-3xl font-bold text-cream">إرسال استفسار تجاري</h3>
+                <h3 class="font-display text-2xl sm:text-3xl font-bold text-cream">إرسال استفسار تجاري</h3>
                 <span class="text-xs text-goldLight" dir="ltr">nandicrestcoffee@gmail.com</span>
               </div>
 
@@ -695,7 +704,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-8 border-b border-gold/10">
         <div>
-          <div class="font-serif text-2xl font-bold text-cream">
+          <div class="font-display text-2xl font-bold text-cream">
             Nandi Crest <span class="text-gold">Coffee</span>
           </div>
           <p class="text-xs text-sand/70 mt-1">
@@ -751,30 +760,31 @@
         </defs>
         <rect width="1200" height="800" fill="url(#bg)"/>
         <circle cx="600" cy="340" r="150" fill="none" stroke="#C89D54" stroke-opacity="0.35" stroke-width="2"/>
-        <text x="600" y="330" text-anchor="middle" fill="#E0BE82" font-family="Georgia, serif" font-size="44" font-weight="bold">NANDI CREST COFFEE</text>
+        <text x="600" y="330" text-anchor="middle" fill="#E0BE82" font-family="sans-serif" font-size="42" font-weight="bold">NANDI CREST COFFEE</text>
         <text x="600" y="385" text-anchor="middle" fill="#F6F1EA" fill-opacity="0.85" font-family="sans-serif" font-size="24">${safe}</text>
         <text x="600" y="435" text-anchor="middle" fill="#C89D54" font-family="sans-serif" font-size="18" letter-spacing="3">KENYAN ARABICA • FOB & CIF • SEA & AIR</text>
       </svg>`;
       return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
     }
 
-    document.querySelectorAll('img[data-repo-img]').forEach((img) => {
-      const names = img.getAttribute('data-repo-img').split(',').map((s) => s.trim()).filter(Boolean);
-      const candidates = [];
-      names.forEach((n) => {
-        candidates.push('./' + encodeURIComponent(n));
-        candidates.push('https://raw.githubusercontent.com/nandicrestcoffee-dev/nandicrestcoffee-ar/main/' + encodeURIComponent(n));
-      });
-      candidates.push(makeFallbackSvg(img.getAttribute('data-label')));
+    document.querySelectorAll('img[data-fallbacks]').forEach((img) => {
+      const primary = img.getAttribute('src');
+      const extras = (img.getAttribute('data-fallbacks') || '').split(',').map((s) => s.trim()).filter(Boolean);
+      const allNames = [primary, ...extras].filter(Boolean);
+      const queue = [];
 
-      let idx = 0;
-      const tryNext = () => {
-        if (idx < candidates.length) {
-          img.src = candidates[idx++];
+      allNames.forEach((n) => {
+        queue.push('./' + encodeURIComponent(n));
+        queue.push('https://raw.githubusercontent.com/nandicrestcoffee-dev/nandicrestcoffee-ar/main/' + encodeURIComponent(n));
+      });
+      queue.push(makeFallbackSvg(img.getAttribute('data-label')));
+
+      let i = 0;
+      img.addEventListener('error', () => {
+        if (i < queue.length) {
+          img.src = queue[i++];
         }
-      };
-      img.addEventListener('error', tryNext);
-      tryNext();
+      });
     });
 
     // Mobile menu toggle
