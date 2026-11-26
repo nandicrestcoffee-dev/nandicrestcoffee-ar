@@ -36,8 +36,13 @@
       text-decoration: none;
     }
 
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
     .container {
-      max-width: 1040px;
+      max-width: 1080px;
       margin: 0 auto;
       padding: 0 20px;
     }
@@ -88,8 +93,15 @@
     }
 
     .hero {
-      padding: 64px 0 48px;
+      padding: 56px 0 48px;
       border-bottom: 1px solid var(--border);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 28px;
+      align-items: center;
     }
 
     .tag {
@@ -100,22 +112,34 @@
       font-size: 0.85rem;
       padding: 4px 12px;
       border-radius: 999px;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
 
     h1 {
-      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      font-size: clamp(1.85rem, 3.8vw, 2.65rem);
       line-height: 1.35;
       color: var(--accent);
-      margin-bottom: 16px;
+      margin-bottom: 14px;
       font-weight: 800;
     }
 
     .hero p {
-      font-size: 1.08rem;
+      font-size: 1.05rem;
       color: var(--muted);
-      max-width: 760px;
-      margin-bottom: 28px;
+      margin-bottom: 24px;
+    }
+
+    .hero-media {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .hero-media img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
     }
 
     .btn-group {
@@ -156,20 +180,55 @@
     h2 {
       font-size: 1.55rem;
       color: var(--accent);
-      margin-bottom: 14px;
+      margin-bottom: 12px;
       font-weight: 800;
     }
 
     .section-lead {
       color: var(--muted);
       margin-bottom: 24px;
-      max-width: 760px;
+      max-width: 780px;
     }
 
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 18px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .photo-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .photo-caption {
+      padding: 16px;
+    }
+
+    .photo-caption h3 {
+      font-size: 1.05rem;
+      color: var(--accent);
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .photo-caption p {
+      color: var(--muted);
+      font-size: 0.92rem;
     }
 
     .card {
@@ -222,6 +281,7 @@
       <a class="brand" href="#">Nandi Crest Coffee</a>
       <nav class="nav-links">
         <a href="#origin">المنشأ</a>
+        <a href="#gallery">المعرض</a>
         <a href="#cooperation">مجالات التعاون</a>
         <a href="#process">آلية الشراكة</a>
         <a href="#contact">التواصل</a>
@@ -233,15 +293,20 @@
 
   <main>
     <section class="hero">
-      <div class="container">
-        <span class="tag">منشأ واحد · مرتفعات عالية · زراعة عائلية</span>
-        <h1>قهوة أرابيكا كينية عالية الارتفاع من مرتفعات ناندي</h1>
-        <p>
-          مبادرة بنّ مقرّها كينيا تربط قهوة الأرابيكا الكينية عالية الارتفاع بالمشترين الدوليين، والمستوردين، والمحامص، وشركاء التجارة طويلة الأمد — انطلاقاً من ناندي هيلز ونيروبي نحو الأسواق العالمية.
-        </p>
-        <div class="btn-group">
-          <a class="btn btn-primary" href="#contact">تواصل مع المكتب الاستراتيجي</a>
-          <a class="btn btn-secondary" href="https://nandicrestcoffee-dev.github.io/">النسخة الإنجليزية الرئيسية</a>
+      <div class="container hero-grid">
+        <div>
+          <span class="tag">منشأ واحد · مرتفعات عالية · زراعة عائلية</span>
+          <h1>قهوة أرابيكا كينية عالية الارتفاع من مرتفعات ناندي</h1>
+          <p>
+            مبادرة بنّ مقرّها كينيا تربط قهوة الأرابيكا الكينية عالية الارتفاع بالمشترين الدوليين، والمستوردين، والمحامص، وشركاء التجارة طويلة الأمد — انطلاقاً من ناندي هيلز ونيروبي نحو الأسواق العالمية.
+          </p>
+          <div class="btn-group">
+            <a class="btn btn-primary" href="#contact">تواصل مع المكتب الاستراتيجي</a>
+            <a class="btn btn-secondary" href="https://nandicrestcoffee-dev.github.io/">النسخة الإنجليزية الرئيسية</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="./grok_1793181558025.jpg" alt="Nandi Crest Coffee - قهوة أرابيكا كينية من مرتفعات ناندي" />
         </div>
       </div>
     </section>
@@ -265,6 +330,48 @@
             <h3>الثقة (Trust)</h3>
             <p>شراكات تجارية شفافة وموثوقة طويلة الأمد.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <h2>من المزرعة إلى التصدير</h2>
+        <p class="section-lead">
+          لمحات من الحصاد، والبن الأخضر، والمعالجة، والترتيبات التجارية التي تربط مرتفعات كينيا بالأسواق الدولية.
+        </p>
+        <div class="gallery-grid">
+          <article class="photo-card">
+            <img src="./grok_1793181041141.jpg" alt="حصاد ثمار البن في مرتفعات ناندي" />
+            <div class="photo-caption">
+              <h3>الحصاد والزراعة</h3>
+              <p>قطف ثمار الأرابيكا الناضجة بعناية في مرتفعات ناندي.</p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img src="./Screenshot_20261028_135548_ChatGPT.jpg" alt="أكياس البن الأخضر الكيني" />
+            <div class="photo-caption">
+              <h3>البن الأخضر للدفعات</h3>
+              <p>تحضير وتجهيز حبوب البن الأخضر للمحامص والمستوردين.</p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img src="./grok_1793182687051.jpg" alt="معالجة ناندي هيلز وتصدير مومباسا" />
+            <div class="photo-caption">
+              <h3>المعالجة واللوجستيات</h3>
+              <p>من محطات المعالجة في ناندي هيلز ووثائق التصدير نحو ميناء مومباسا.</p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img src="./Screenshot_20261028_135631_ChatGPT.jpg" alt="اتفاقيات التصدير والتجارة العالمية" />
+            <div class="photo-caption">
+              <h3>الشراكات التجارية</h3>
+              <p>تنظيم الاتفاقيات التجارية والأسعار والكميات مع الشركاء الدوليين.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
